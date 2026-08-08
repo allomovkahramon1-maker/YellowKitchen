@@ -1,0 +1,574 @@
+// quello 
+/* ==================== NORMALIZE ==================== */
+
+// * {
+    margin: 0;
+    padding: 0;
+    box- sizing: border - box;
+}
+
+html {
+    scroll - behavior: smooth;
+}
+
+body {
+    font - family: "Martel Sans", sans - serif;
+    color: #3F4255;
+}
+
+img {
+    max - width: 100 %;
+}
+
+a {
+    text - decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* ==================== CONTAINER ==================== */
+
+.container {
+    width: 100 %;
+    max - width: 1110px;
+    margin: 0 auto;
+}
+
+
+/* ==================== HEADER ==================== */
+
+
+
+header {
+    width: 100 %;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background - color: #F2F4FA;
+    box - shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z - index: 1000;
+}
+
+.header__main {
+    display: flex;
+    justify - content: space - between;
+    align - items: center;
+    padding: 0 20px 20px;
+    border - bottom: 1px solid #D4D7E5;
+}
+
+.navbar {
+    display: flex;
+    align - items: center;
+    gap: 20px;
+}
+
+.navbar button {
+    display: flex;
+    align - items: center;
+    gap: 5px;
+    padding: 10px;
+    border: none;
+    border - radius: 5px;
+    background - color: white;
+}
+
+
+/* ==================== HERO ==================== */
+
+.main__section2 {
+    margin - top: 150px;
+    display: flex;
+    justify - content: space - between;
+    align - items: center;
+}
+
+.main__section {
+    max - width: 550px;
+}
+
+.main__section h1 {
+    margin - top: 50px;
+    font - family: "Poppins", sans - serif;
+    font - size: 58px;
+    line - height: 64px;
+    font - weight: 300;
+    color: #3F4255;
+}
+
+.section__buttons {
+    display: flex;
+    gap: 24px;
+    margin - top: 60px;
+}
+
+.section__buttons button {
+    padding: 18px 40px;
+    border: 2px solid #FFE145;
+    border - radius: 4px;
+    background - color: white;
+    color: #3F4255;
+    font - family: "Martel Sans", sans - serif;
+    font - size: 16px;
+    font - weight: 700;
+    line - height: 20px;
+}
+
+.img2 {
+    width: 600px;
+    height: auto;
+}
+
+
+/* ==================== INFO ==================== */
+
+.section {
+    display: flex;
+    justify - content: space - between;
+    align - items: center;
+}
+
+.section__main {
+    display: flex;
+    gap: 30px;
+    margin - top: 40px;
+}
+
+.main2__section,
+.main3__section,
+.main4__section {
+    display: flex;
+    align - items: center;
+    gap: 16px;
+}
+
+.main2__section div,
+.main4__section div {
+    width: 182px;
+    font - size: 16px;
+    line - height: 26px;
+    font - weight: 300;
+}
+
+.main3__section div {
+    width: 124px;
+    font - size: 16px;
+    line - height: 26px;
+    font - weight: 300;
+}
+
+.text {
+    margin - top: 30px;
+    font - size: 16px;
+}
+
+
+/* ==================== SECTION TITLE ==================== */
+
+.section__restaurant {
+    display: flex;
+    justify - content: space - between;
+    align - items: center;
+    margin - top: 70px;
+    margin - bottom: 30px;
+}
+
+.section__restaurant h1 {
+    font - family: "Poppins", sans - serif;
+    font - size: 36px;
+    line - height: 36px;
+    font - weight: 300;
+}
+
+.section__restaurant button {
+    padding: 14px 24px;
+    border: none;
+    border - radius: 4px;
+    background - color: #F2F4FA;
+    color: #9093A6;
+    font - size: 16px;
+    font - weight: 700;
+}
+
+
+/* ==================== SWIPER ==================== */
+
+.swiper {
+    width: 100 %;
+    overflow: hidden;
+}
+
+.swiper - slide {
+    height: 300px;
+    border - radius: 10px;
+    overflow: hidden;
+}
+
+.swiper - slide img {
+    width: 100 %;
+    height: 100 %;
+    object - fit: cover;
+}
+
+
+/* ==================== SEARCH ==================== */
+
+.section4__main {
+    margin - top: 72px;
+    margin - bottom: 72px;
+    padding: 60px;
+    display: flex;
+    justify - content: space - between;
+    align - items: center;
+    gap: 40px;
+    background - color: #F2F4FA;
+    border: 2px solid #FFE145;
+}
+
+.section__title h1 {
+    font - family: "Poppins", sans - serif;
+    font - size: 36px;
+    font - weight: 300;
+}
+
+.section__title p {
+    width: 424px;
+    margin - top: 20px;
+    font - size: 16px;
+    line - height: 24px;
+}
+
+.section__search {
+    display: flex;
+    gap: 4px;
+}
+
+.section__search input {
+    width: 300px;
+    padding: 24px;
+    border: none;
+    outline: none;
+    border - radius: 4px;
+}
+
+.section__search button {
+    padding: 24px;
+    border: none;
+    border - radius: 4px;
+    background - color: #FFE145;
+    font - weight: 700;
+}
+
+
+/* ==================== SPECIALITIES ==================== */
+
+.section__specialities {
+    display: flex;
+    justify - content: space - evenly;
+    gap: 30px;
+    margin - top: 79px;
+}
+
+.section__specialities img {
+    max - width: 100 %;
+}
+
+.section__img img {
+    width: 100 %;
+    margin - top: 72px;
+}
+
+
+/* ==================== INSTAGRAM ==================== */
+
+.section__title2 h1 {
+    margin - top: 72px;
+    font - family: "Poppins", sans - serif;
+    font - size: 36px;
+    font - weight: 300;
+}
+
+.section__title2 span {
+    opacity: 0.5;
+}
+
+.section__card {
+    display: flex;
+    gap: 24px;
+    margin - top: 20px;
+}
+
+.section__card img {
+    width: 250px;
+    height: 250px;
+    object - fit: cover;
+    border - radius: 6px;
+}
+
+
+/* ==================== FOOTER ==================== */
+
+footer {
+    margin - top: 72px;
+    background - color: #3F4255;
+}
+
+.footer__section {
+    display: flex;
+    justify - content: space - between;
+    padding: 50px;
+}
+
+.footer__logo {
+    display: flex;
+    flex - direction: column;
+    gap: 48px;
+}
+
+.footer__page {
+    display: flex;
+    gap: 50px;
+}
+
+.footer__links {
+    display: flex;
+    flex - direction: column;
+    gap: 20px;
+}
+
+.footer__links h2 {
+    color: white;
+    font - family: "Poppins", sans - serif;
+    font - size: 24px;
+}
+
+.footer__links a {
+    color: #D4D7E5;
+    font - size: 16px;
+    font - weight: 700;
+}
+
+.span__text {
+    width: 297px;
+}
+
+select {
+    width: 200px;
+    padding: 15px;
+    color: white;
+    background - color: #3F4255;
+    border: none;
+    border - radius: 8px;
+    outline: none;
+    font - size: 16px;
+}
+
+option {
+    color: black;
+    background - color: white;
+}
+
+.footer__bottom {
+    display: flex;
+    justify - content: space - between;
+    align - items: center;
+    padding: 30px 50px;
+}
+
+.footer__div,
+.footer__call {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__call a {
+    color: white;
+    font - size: 12px;
+    font - weight: 800;
+}
+
+
+/* ==================== RESPONSIVE ==================== */
+
+@media(max - width: 900px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .header__main {
+        padding: 10px 0;
+    }
+
+    .main__section2 {
+        flex - direction: column;
+        text - align: center;
+    }
+
+    .main__section h1 {
+        font - size: 44px;
+        line - height: 52px;
+    }
+
+    .img2 {
+        width: 100 %;
+        max - width: 600px;
+    }
+
+    .section {
+        flex - direction: column;
+    }
+
+    .section__main {
+        flex - wrap: wrap;
+        justify - content: center;
+    }
+
+    .section4__main {
+        flex - direction: column;
+        align - items: stretch;
+        padding: 40px;
+    }
+
+    .section__title p {
+        width: 100 %;
+    }
+
+    .section__search input {
+        width: 100 %;
+    }
+
+    .section__specialities {
+        flex - wrap: wrap;
+    }
+
+    .section__card {
+        flex - wrap: wrap;
+    }
+
+    .section__card img {
+        width: calc(50 % - 12px);
+        height: auto;
+    }
+
+    .footer__section {
+        flex - direction: column;
+        gap: 40px;
+    }
+
+    .footer__page {
+        flex - wrap: wrap;
+    }
+}
+
+
+@media(max - width: 600px) {
+
+    .navbar {
+        gap: 5px;
+    }
+
+    .navbar button {
+        padding: 7px;
+    }
+
+    .main__section h1 {
+        font - size: 36px;
+        line - height: 44px;
+    }
+
+    .section__buttons {
+        flex - direction: column;
+        gap: 12px;
+    }
+
+    .section__buttons button {
+        width: 100 %;
+    }
+
+    .section__restaurant h1 {
+        font - size: 28px;
+    }
+
+    .section4__main {
+        padding: 25px;
+    }
+
+    .section__title h1 {
+        font - size: 28px;
+    }
+
+    .section__search {
+        flex - direction: column;
+    }
+
+    .section__search button {
+        width: 100 %;
+    }
+
+    .section__card img {
+        width: 100 %;
+    }
+
+    .footer__page {
+        flex - direction: column;
+    }
+
+    .footer__bottom {
+        flex - direction: column;
+        gap: 20px;
+        padding: 30px 10px;
+        text - align: center;
+    }
+
+}
+
+
+
+-----------------------------
+
+
+    header {
+    width: 100 %;
+    padding: 20px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box - shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background - color: #F2F4FA;
+    z - index: 1000;
+}
+
+.header__main {
+    display: flex;
+    justify - content: space - between;
+    align - items: center;
+    border - bottom: 1px solid #D4D7E5;
+    padding - inline: 200px;
+}
+
+.navbar {
+    display: flex;
+    gap: 48px;
+    align - items: center;
+}
+
+.nav__one button {
+    display: flex;
+    gap: 2px;
+    align - items: center;
+    border - radius: 5px;
+}
+
+nav button {
+    border: none;
+    padding: 10px;
+    background - color: white;
+    border - radius: 5px;
+}
