@@ -13,7 +13,7 @@
 
 <body>
 
-    <div class="container">
+    <div class="container"></div>
 
         <!-- HEADER -->
         <header class="header__main">
@@ -25,11 +25,22 @@
             <div class="navbar">
 
                 <nav class="nav__one">
-                    <button>
+                    <button id="loginBtn">
                         <img src="image/person.svg" alt="person">
                         Log in
                     </button>
                 </nav>
+
+            <div id="loginForm" class="login-form">
+                <form>
+                    <h2>Log in</h2>
+
+                        <input type="email" class="input__search" placeholder="Email" required>
+                        <input type="password" class="input__search" placeholder="Password" required>
+
+                    <button class="submit" type="submit">Log in</button>
+                </form>
+            </div>
 
                 <nav>
                     <button>
@@ -38,7 +49,7 @@
                 </nav>
 
                 <nav>
-                    <button>
+                    <button id="menuBtn">
                         <img src="image/ic-menu-navigation.svg" alt="menu">
                     </button>
                 </nav>
@@ -51,7 +62,7 @@
         <main>
 
             <!-- HERO -->
-            <section class="main__section2">
+            <section class="main__section2 container">
 
                 <div class="main__section">
 
@@ -79,7 +90,7 @@
 
 
             <!-- INFO -->
-            <section class="section">
+            <section class="section container">
 
                 <div class="section__main">
 
@@ -114,7 +125,7 @@
 
 
             <!-- RESTAURANTS -->
-            <section>
+            <section class="container">
 
                 <div class="section__restaurant">
                     <h1>Restaurants</h1>
@@ -126,27 +137,34 @@
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide">
-                            <img src="image/Photo-base1.png" alt="restaurant">
+                            <div><img src="image/Photo-base1.png" alt="restaurant"></div>
+                            <span><div><img src="image/burger.svg" alt="burger"></div></span>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div><img src="image/Photo-base2.png" alt="restaurant"></div>
+                            <span><div><img src="image/il_paster.svg" alt="il_paster"></div></span>
                         </div>
 
                         <div class="swiper-slide">
-                            <img src="image/Photo-base2.png" alt="restaurant">
+                            <div><img src="image/Photo-base3.png" alt="restaurant"></div>
+                            <span><div><img src="image/Believe.svg" alt="Believe"></div></span>
                         </div>
 
                         <div class="swiper-slide">
-                            <img src="image/Photo-base3.png" alt="restaurant">
+                            <div><img src="image/Photo-base.png" alt="restaurant"></div>
+                            <span><div><img src="image/vietnamese.svg" alt="vietnamese"></div></span>
                         </div>
 
                         <div class="swiper-slide">
-                            <img src="image/Photo-base.png" alt="restaurant">
+                            <div><img src="image/Photo-base1.png" alt="restaurant"></div>
+                            <span><div><img src="image/burger.svg" alt="burger"></div></span>
                         </div>
 
                         <div class="swiper-slide">
-                            <img src="image/Photo-base1.png" alt="restaurant">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="image/Photo-base2.png" alt="restaurant">
+                            <div><img src="image/Photo-base2.png" alt="restaurant"></div>
+                            <span><div><img src="image/il_paster.svg" alt="il_paster"></div></span>
                         </div>
 
                     </div>
@@ -160,9 +178,10 @@
 
 
             <!-- SEARCH -->
-            <section class="section4__main">
+            <section class="section4__main ">
 
-                <div class="section__title">
+                <div class="div__section">
+                    <div class="section__title">
                     <h1>Your nearest restaurants</h1>
 
                     <p>
@@ -181,94 +200,121 @@
                     <button>Send</button>
 
                 </div>
+                </div>
 
             </section>
 
 
             <!-- SPECIALITIES -->
-            <section>
+
+            <section class="container categories">
 
                 <div class="section__restaurant">
                     <h1>Specialities</h1>
                     <button>Show all</button>
                 </div>
 
-                <div class="swiper specialitySwiper">
+                 <div class="categories__list" id="categories">
+                
+                    <div class="category">
+                        <img src="image/Frame 28.png" alt="speciality">
+                        <p>Bagel</p>
+                    </div>
+                
+                    <div class="category">
+                        <img src="image/Frame 29.png" alt="speciality">
+                        <p>Burger</p>
+                    </div>
+                
+                    <div class="category">
+                        <img src="image/Frame 30.png" alt="speciality">
+                        <p>Chicken</p>
+                    </div>
+                
+                    <div class="category">
+                        <img src="image/Frame 31.png" alt="speciality">
+                        <p>Fish</p>
+                    </div>
+                
+                    <div class="category">
+                        <img src="image/Frame 32.png" alt="speciality">
+                        <p>Fish’Chips</p>
+                    </div>
+                
+                    <div class="category">
+                        <img src="image/Frame 33.png" alt="speciality">
+                        <p>Salads</p>
+                    </div>
+                
+                    <div class="category">
+                        <img src="image/Frame 34.png" alt="speciality">
+                        <p>Pizza</p>
+                    </div>
+                
+                    <div class="category">
+                        <img src="image/Frame 35.png" alt="speciality">
+                        <p>Pasta</p>
+                    </div>
+                
+                </div>
 
-                    <div class="swiper-wrapper">
+                    <div class="restaurant-next swiper-button-next"></div>
+                    <div class="restaurant-prev swiper-button-prev"></div>
 
-                        <div class="swiper-slide">
-                            <img src="image/Frame 28.png" alt="speciality">
+                </div>
+
+            </section>
+
+
+            <!-- images -->
+            <section class="section__specialities container">
+
+                <div class="stats">
+
+                    <div class="stat">
+                        <div class="circle">
+                            <span>1</span>
                         </div>
-
-                        <div class="swiper-slide">
-                            <img src="image/Frame 29.png" alt="speciality">
+                        <p>kitchen</p>
+                    </div>
+                
+                    <div class="stat">
+                        <div class="circle">
+                            <span>11</span>
                         </div>
-
-                        <div class="swiper-slide">
-                            <img src="image/Frame 30.png" alt="speciality">
+                        <p>specialties</p>
+                    </div>
+                
+                    <div class="stat">
+                        <div class="circle">
+                            <span>11</span>
                         </div>
-
-                        <div class="swiper-slide">
-                            <img src="image/Frame 31.png" alt="speciality">
+                        <p>specialties</p>
+                    </div>
+                
+                    <div class="stat">
+                        <div class="circle">
+                            <span>1</span>
                         </div>
-
-                        <div class="swiper-slide">
-                            <img src="image/Frame 32.png" alt="speciality">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="image/Frame 33.png" alt="speciality">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="image/Frame 34.png" alt="speciality">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="image/Frame 35.png" alt="speciality">
-                        </div>
-
+                        <p>kitchen</p>
                     </div>
 
-                    <div class="speciality-next swiper-button-next"></div>
-                    <div class="speciality-prev swiper-button-prev"></div>
-
-                </div>
+            </div>
 
             </section>
 
+            
 
-            <!-- COMPONENTS -->
-            <section class="section__specialities">
-
-                <div>
-                    <img src="image/Component 7.png" alt="component">
-                </div>
-
-                <div>
-                    <img src="image/Component 8.png" alt="component">
-                </div>
-
-                <div>
-                    <img src="image/Component 8.png" alt="component">
-                </div>
-
-                <div>
-                    <img src="image/Component 7.png" alt="component">
-                </div>
-
+            
+            <!-- xarita -->
+             
+            <section class="section__img container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47772.470138090874!2d60.58187409339857!3d41.55237379726505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41dfc9284eafb523%3A0xffaf4382f65d7b61!2sUrganch%2C%20Xorazm%20Viloyati%2C%20O%CA%BBzbekiston!5e0!3m2!1suz!2s!4v1786431497116!5m2!1suz!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </section>
-
-
-            <!-- MAP -->
-            <section class="section__img">
-                <img src="image/Map.png" alt="Map">
-            </section>
-
-
-            <!-- INSTAGRAM -->
-            <section>
+            
+            
+            
+            <section class="container">
 
                 <div class="section__title2">
                     <h1>
@@ -289,10 +335,12 @@
             </section>
 
         </main>
+        
 
 
-        <!-- FOOTER -->
-        <footer>
+        <!-- FOOTER QISMI-->
+
+        <footer class="footer__container">
 
             <div class="footer__section">
 
@@ -374,6 +422,7 @@
 
                 </div>
 
+
             </div>
 
 
@@ -406,9 +455,12 @@
 
             </div>
 
+
+            
+
         </footer>
 
-    </div>
+    
 
 
     <!-- SWIPER JS -->
@@ -478,6 +530,8 @@
         });
 
     </script>
+
+    <script src="app.js"></script>
 
 </body>
 
