@@ -95,3 +95,18 @@ loginBtn.addEventListener("click", () => {
 });
 
 
+// --------------------------------------
+
+
+
+
+
+    let count = 0;
+
+    const cartCount = document.getElementById("cartCount");
+    const addBtn = document.getElementById("addBtn");
+
+    addBtn.addEventListener("click", function () {
+        count++;
+    cartCount.textContent = count;
+    });

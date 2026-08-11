@@ -60,6 +60,21 @@ header {
     padding-inline: 200px;
 }
 
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #8d8fa3;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+.cart:hover {
+    color: #5b5d72;
+}
+
 .navbar {
     display: flex;
     gap: 48px;
