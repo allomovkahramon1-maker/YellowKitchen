@@ -4,6 +4,7 @@
 
 const menuBtn = document.getElementById("menuBtn");
 
+// Overlay yaratish
 const overlay = document.createElement("div");
 overlay.className = "menu-overlay";
 
@@ -11,7 +12,7 @@ document.body.appendChild(overlay);
 
 
 // =====================================================
-// SIDE MENU
+// SIDE MENU YARATISH
 // =====================================================
 
 const menu = document.createElement("div");
@@ -22,7 +23,7 @@ menu.innerHTML = `
 
     <div class="side-menu__header">
 
-        <button class="close-menu">
+        <button class="close-menu" type="button">
             ✕
         </button>
 
@@ -37,6 +38,7 @@ menu.innerHTML = `
         <button
             class="mobile-menu-btn"
             id="mobileLoginBtn"
+            type="button"
         >
 
             <img
@@ -56,6 +58,7 @@ menu.innerHTML = `
         <button
             class="mobile-menu-btn"
             id="mobileCartBtn"
+            type="button"
         >
 
             <span class="mobile-cart-icon">
@@ -153,7 +156,7 @@ document.body.appendChild(menu);
 
 
 // =====================================================
-// MENU ELEMENTS
+// MENU ELEMENTLARI
 // =====================================================
 
 const closeMenuBtn =
@@ -170,20 +173,23 @@ const mobileCartCount =
 
 
 // =====================================================
-// OPEN MENU
+// MENU OCHISH
 // =====================================================
 
-menuBtn.addEventListener("click", () => {
+function openMenu() {
 
     menu.classList.add("active");
 
     overlay.classList.add("active");
 
-});
+    // Menu ochiq → sahifa scroll bo'lmaydi
+    document.body.style.overflow = "hidden";
+
+}
 
 
 // =====================================================
-// CLOSE MENU
+// MENU YOPISH
 // =====================================================
 
 function closeMenu() {
@@ -192,14 +198,43 @@ function closeMenu() {
 
     overlay.classList.remove("active");
 
+    // Menu yopiq → scroll qaytadi
+    document.body.style.overflow = "auto";
+
 }
 
 
-closeMenuBtn.addEventListener(
-    "click",
-    closeMenu
-);
+// =====================================================
+// MENU BUTTON
+// =====================================================
 
+if (menuBtn) {
+
+    menuBtn.addEventListener(
+        "click",
+        openMenu
+    );
+
+}
+
+
+// =====================================================
+// CLOSE BUTTON
+// =====================================================
+
+if (closeMenuBtn) {
+
+    closeMenuBtn.addEventListener(
+        "click",
+        closeMenu
+    );
+
+}
+
+
+// =====================================================
+// OVERLAY
+// =====================================================
 
 overlay.addEventListener(
     "click",
@@ -225,11 +260,15 @@ const closeLogin =
 
 function openLogin() {
 
-    // Agar menu ochiq bo'lsa yopiladi
+    // Menu ochiq bo'lsa yopiladi
     closeMenu();
 
     // Login form ochiladi
-    loginForm.classList.add("active");
+    if (loginForm) {
+
+        loginForm.classList.add("active");
+
+    }
 
 }
 
@@ -238,12 +277,18 @@ function openLogin() {
 
 function closeLoginForm() {
 
-    loginForm.classList.remove("active");
+    if (loginForm) {
+
+        loginForm.classList.remove("active");
+
+    }
 
 }
 
 
-// Header Login
+// =====================================================
+// HEADER LOGIN
+// =====================================================
 
 if (loginBtn) {
 
@@ -255,7 +300,9 @@ if (loginBtn) {
 }
 
 
-// Menu ichidagi Login
+// =====================================================
+// MENU ICHIDAGI LOGIN
+// =====================================================
 
 if (mobileLoginBtn) {
 
@@ -267,7 +314,9 @@ if (mobileLoginBtn) {
 }
 
 
-// Login ichidagi X
+// =====================================================
+// LOGIN CLOSE
+// =====================================================
 
 if (closeLogin) {
 
@@ -293,7 +342,9 @@ const addBtn =
     document.getElementById("addBtn");
 
 
-// Cart sonini yangilash
+// =====================================================
+// CART COUNT YANGILASH
+// =====================================================
 
 function updateCart() {
 
@@ -312,7 +363,9 @@ function updateCart() {
 }
 
 
-// Headerdagi Cart
+// =====================================================
+// HEADER CART
+// =====================================================
 
 if (addBtn) {
 
@@ -330,7 +383,9 @@ if (addBtn) {
 }
 
 
-// Menu ichidagi Cart
+// =====================================================
+// MENU ICHIDAGI CART
+// =====================================================
 
 if (mobileCartBtn) {
 
@@ -401,7 +456,9 @@ document.addEventListener(
 // =====================================================
 
 
+// =====================================================
 // RESTAURANTS
+// =====================================================
 
 const restaurantSwiperElement =
     document.querySelector(".restaurantSwiper");
@@ -456,7 +513,7 @@ if (restaurantSwiperElement) {
 
 
 // =====================================================
-// SPECIALITIES SWIPER
+// SPECIALITIES
 // =====================================================
 
 const specialitySwiperElement =

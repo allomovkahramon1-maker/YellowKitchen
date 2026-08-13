@@ -19,6 +19,10 @@ body {
     overflow-x: hidden;
 }
 
+
+
+
+
 img {
     display: block;
     max-width: 100%;
@@ -59,7 +63,7 @@ button {
 
     border-bottom: 1px solid #D4D7E5;
 
-    position: sticky;
+    /* position: sticky; */
     top: 0;
 
     z-index: 1000;
@@ -615,6 +619,7 @@ button {
 
     font-weight: 700;
 }
+
 /*  */
 
 /* =====================================================
@@ -830,18 +835,33 @@ button {
 
 /* =====================================================
    SIDE MENU
-===================================================== */
+   ===================================================== */
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+}
+
+.menu {
+    position: fixed;
+    z-index: 20;
+}
+
+.close-menu,
+.menu button {
+    position: relative;
+    z-index: 30;
+}
+
+
+
 
 .menu-overlay {
     position: fixed;
 
     inset: 0;
 
-    z-index: 9998;
-
-    background-color: rgba(0, 0, 0, 0.45);
-
-    opacity: 0;
+    background-color: #3F4255;
 
     visibility: hidden;
 
@@ -856,7 +876,6 @@ button {
 
 .side-menu {
     position: fixed;
-
     top: 0;
     right: -400px;
 
@@ -874,11 +893,12 @@ button {
     box-shadow:
         -5px 0 20px rgba(0, 0, 0, 0.15);
 
-    transition:
-        right 0.35s ease;
+    transition: right 0.35s ease;
+
 }
 
 .side-menu.active {
+    overflow: hidden;
     right: 0;
 }
 
@@ -971,7 +991,7 @@ button {
     color: #888CA0;
 }
 
-.phone>span:first-child {
+.phone span:first-child {
     font-size: 20px;
 }
 
@@ -1000,7 +1020,7 @@ button {
    MENU LINKS
 ===================================================== */
 
-.side-menu__content>a {
+.side-menu__content a {
     display: block;
 
     padding: 18px 0;
@@ -1054,10 +1074,10 @@ button {
     top: 50%;
     left: 50%;
 
-    z-index: 10000;
 
-    transform:
-        translate(-50%, -50%);
+
+    /* transform:
+        translate(-50%, -50%); */
 
     padding: 40px;
 
@@ -1065,8 +1085,8 @@ button {
 
     background-color: #F2F4FA;
 
-    box-shadow:
-        0 5px 30px rgba(0, 0, 0, 0.2);
+    /* box-shadow:
+        0 5px 30px rgba(0, 0, 0, 0.2); */
 }
 
 .login-form.active {
@@ -1129,7 +1149,7 @@ button {
 
     transform: translate(-50%, -50%);
 
-    z-index: 10000;
+    /* z-index: 10000;   */
 
     position: fixed;
 }
@@ -1196,7 +1216,7 @@ button {
     }
 
     .section__main {
-        
+
         flex-wrap: wrap;
 
         justify-content: center;
