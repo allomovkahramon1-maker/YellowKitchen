@@ -63,8 +63,9 @@ button {
 
     border-bottom: 1px solid #D4D7E5;
 
-    /* position: sticky; */
-    top: 0;
+    /* position: sticky;
+    top: 0; */
+    
 
     z-index: 1000;
 }
@@ -376,22 +377,8 @@ button {
 .swiper-button-prev {
     width: 42px;
     height: 42px;
-
-    background-color: #fff;
-
     border-radius: 50%;
 
-    box-shadow:
-        0 3px 10px rgba(0, 0, 0, 0.15);
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    font-size: 16px;
-
-    color: #3F4255;
-
-    font-weight: bold;
 }
 
 
@@ -1417,12 +1404,16 @@ button {
 
         font-size: 13px;
     }
+    .swiper-slide div img{
+        width: 100%;
+    }
 
 
     /* RESTAURANT */
 
     .restaurant-slide {
         height: 260px;
+        
     }
 
 
